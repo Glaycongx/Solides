@@ -2,6 +2,10 @@
 session_start();
 include("conexao.php");
 
+$nome = $_SESSION['usuario'];
+
+$id_fk = ("SELECT id from users where usuario = '$nome'");
+
 
 if (!'conexao.php') {
       die("Connection failed: " . mysqli_connect_error());
@@ -9,9 +13,7 @@ if (!'conexao.php') {
  
 echo "Connected successfully";
 
-$sql = "UPDATE users  
-    SET saida_empresa = NOW()";
-
+$sql = "INSERT into ponto_eletronico(id_users, data_registro, tipo_registro) values ((select id from users where usuario = '$nome'),NOW(),'Saida empresa')";
 
 if($conexao->query($sql) === TRUE) {
 	echo "New record created successfully";

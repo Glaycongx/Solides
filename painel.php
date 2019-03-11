@@ -31,11 +31,19 @@ include('verifica_login.php');
                                 <a href="entrada_almoco.php" class="button is-block is-link is-large is-fullwidth" style="font-weight: 500">Entrada 2</a>
                                 <div div style="margin-right: 5px"></div>
                                 <a href="saida_empresa.php" class="button is-block is-link is-large is-fullwidth" style="font-weight: 500">Saída 2</a>
-
-
                             </div>
                         </form>
-                        <h2><a href="logout.php" class="button is-block is-link is-large is-fullwidth">Sair</a></h2>
+
+                        <div style="display: flex; margin-top: 20px">
+                            
+                        <a href="logout.php" class="button is-block is-link is-large is-fullwidth" style="font-weight: 500; background-color: red">Sair</a>
+                        <div style="margin-right: 5px"></div>
+                        <a href="relatorio.php" class="button is-block is-link is-large is-fullwidth" style="font-weight: 500">Histórico</a>
+                                
+
+                        </div>
+                        
+
                     </div>
 
 </div>

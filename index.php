@@ -46,9 +46,9 @@ session_start();
                                 </div>
                             </div>
                             <div style="display: flex; margin-top: 20px">
-                                <button type="submit" class="button is-block is-link is-large is-fullwidth display: flex">Entrar</button>
-                                <div style="margin-right: 10px"></div>
                                 <a href="cadastro.php" class="button is-block is-link is-large is-fullwidth" style="font-weight: 500">Cadastrar</a>
+                                <div style="margin-right: 10px"></div>
+                                <button type="submit" class="button is-block is-link is-large is-fullwidth display: flex" style="background-color: green">Entrar</button>
 
                             </div>
                         </form>

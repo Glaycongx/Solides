@@ -64,9 +64,10 @@ session_start();
                                 </div>
                             </div>
                             <div style="display: flex">
-                            <button type="submit" class="button is-block is-link is-large is-fullwidth">Cadastrar</button>
-                            <div style="margin-right: 10px"></div>
                             <a href="index.php" class="button is-block is-link is-large is-fullwidth" style="font-weight: 500">Voltar</a>
+                            <div style="margin-right: 10px"></div>
+                            <button type="submit" class="button is-block is-link is-large is-fullwidth" style="background-color: green">Cadastrar</button>
+                            
                             </div>
                         </form>
                     </div>
