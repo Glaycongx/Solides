@@ -46,15 +46,10 @@ include('verifica_login.php');
                         </form>
 
                         <div style="display: flex; margin-top: 20px">
-                            
-                        <a href="logout.php" class="button is-block is-link is-large is-fullwidth" style="font-weight: 500; background-color: red">Sair</a>
+                            <a href="logout.php" class="button is-block is-link is-large is-fullwidth" style="font-weight: 500; background-color: red">Sair</a>
                         <div style="margin-right: 5px"></div>
-                        <a href="relatorio.php" class="button is-block is-link is-large is-fullwidth" style="font-weight: 500">Histórico</a>
-                                
-
+                            <a href="relatorio.php" class="button is-block is-link is-large is-fullwidth" style="font-weight: 500">Histórico</a>
                         </div>
-                        
-
                     </div>
 
 </div>
