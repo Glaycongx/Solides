@@ -10,6 +10,8 @@ Adicioná-lo a pasta www, dentro da instalação do WAMP.
 
 Pronto! Basta acessar: localhost/solides
 
+O site está hospedado no domínio: http://pontodoestagiario.tech/
+
 Obs: O banco de dados anexo já contém um login:
 
 usuário: glaycon
