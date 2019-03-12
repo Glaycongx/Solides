@@ -14,8 +14,7 @@ if (!'conexao.php') {
  
 echo "Connected successfully";
 
-$sql = "INSERT into ponto_eletronico(id_users, data_registro, tipo_registro) values ((select id from users where usuario = '$nome'),NOW(),'Retorno Almoco')";
-
+$sql = "INSERT into ponto_eletronico(id_users, data_registro, tipo_registro, hora) values ((select id from users where usuario = '$nome'),NOW(),'Retorno Almoco', NOW())";
 
 if($conexao->query($sql) === TRUE) {
 	echo "New record created successfully";

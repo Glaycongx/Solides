@@ -13,7 +13,7 @@ if (!'conexao.php') {
  
 echo "Connected successfully";
 
-$sql = "INSERT into ponto_eletronico(id_users, data_registro, tipo_registro) values ((select id from users where usuario = '$nome'),NOW(),'Saida empresa')";
+$sql = "INSERT into ponto_eletronico(id_users, data_registro, tipo_registro, hora) values ((select id from users where usuario = '$nome'),NOW(),'Saida Empresa', NOW())";
 
 if($conexao->query($sql) === TRUE) {
 	echo "New record created successfully";

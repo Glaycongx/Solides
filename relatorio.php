@@ -4,11 +4,11 @@ include("conexao.php");
 
 $nome = $_SESSION['usuario'];
 
-$exibe = ("SELECT id from users where usuario = '$nome'");
+$exibe = ("SELECT ponto_eletronico.data_registro AS data, ponto_eletronico.tipo_registro AS tipo, ponto_eletronico.hora AS hora FROM ponto_eletronico INNER JOIN users ON users.id = ponto_eletronico.id_users WHERE usuario = '$nome'");
 
-$sql = ("SELECT data_registro from ponto_eletronico where (select id from users where id = id_users)");
+// $sql = ("SELECT data_registro from ponto_eletronico where (select id from users where id = id_users)");
 
-$result = mysqli_query($conexao, $exibe);
+$result = $conexao->query($exibe);
 
 ?>
 
@@ -32,18 +32,27 @@ $result = mysqli_query($conexao, $exibe);
             <thead>
                 <tr>
                     <th class="celula_head">Data Registro</th>
+                    <th class="celula_head">Hora</th>
                     <th class="celula_head">Tipo Registro</th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                	<td class="celula_center">
-                        <?php echo $result;
-                     ?>
-                         
-                     </td>
-                    <td class="celula_center">{{Data}}</td>
-                </tr>
+                <?php 
+                    while ($row = mysqli_fetch_assoc($result)) { ?>
+                        <tr>
+                            <td class="celula_center">
+                                <?php echo $row['data'];?>
+                             </td>
+                             <td class="celula_center">
+                                <?php echo $row['hora']; ?>
+                             </td>
+                            <td class="celula_center">
+                                <?php echo $row['tipo']; ?>
+                            </td>
+                        </tr>
+                   
+                   <?php }
+                 ?>
             </tbody>
         </table>
         <div id="rodape-final">
