@@ -46,11 +46,10 @@ session_start();
                                     <input name="senha" class="input is-large" type="password" required="" placeholder="Sua senha">
                                 </div>
                             </div>
-                            <div style="display: flex; margin-top: 20px">
-                                <a href="cadastro.php" class="button is-block is-link is-large is-fullwidth" style="font-weight: 500">Cadastrar</a>
-                                <div style="margin-right: 10px"></div>
+                            <div style="display: block; margin-top: 20px">
                                 <button type="submit" class="button is-block is-link is-large is-fullwidth display: flex" style="background-color: green">Entrar</button>
-
+                                <div style="margin-right: 10px"></div>
+                                <a href="cadastro.php" class="button is-block is-link is-large is-fullwidth" style="font-weight: 500; margin-top: 10px">Não possui cadastro?</a>
                             </div>
                         </form>
                     </div>

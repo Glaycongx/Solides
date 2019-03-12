@@ -8,6 +8,7 @@ include('verifica_login.php');
     
 <head>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bulma.min.css" />
     <link rel="stylesheet" type="text/css" href="css/login.css">	
 </head>
@@ -34,14 +35,14 @@ include('verifica_login.php');
                         unset($_SESSION['status_cadastro']);
                             ?>  
                             
-                            <div style="display: flex; margin-top: 20px">
+                            <div style="display: block; margin-top: 20px">
                                 <a href="entrada_empresa.php" class="button is-block is-link is-large is-fullwidth" style="font-weight: 500">Entrada 1</a>
                                 <div style="margin-right: 5px"></div>
-                                <a href="saida_almoco.php" class="button is-block is-link is-large is-fullwidth" style="font-weight: 500">Saida 1</a>
+                                <a href="saida_almoco.php" class="button is-block is-link is-large is-fullwidth" style="font-weight: 500; margin-top: 10px">Saida 1</a>
                                 <div div style="margin-right: 5px"></div>
-                                <a href="entrada_almoco.php" class="button is-block is-link is-large is-fullwidth" style="font-weight: 500">Entrada 2</a>
+                                <a href="entrada_almoco.php" class="button is-block is-link is-large is-fullwidth" style="font-weight: 500; margin-top: 10px">Entrada 2</a>
                                 <div div style="margin-right: 5px"></div>
-                                <a href="saida_empresa.php" class="button is-block is-link is-large is-fullwidth" style="font-weight: 500">Saída 2</a>
+                                <a href="saida_empresa.php" class="button is-block is-link is-large is-fullwidth" style="font-weight: 500; margin-top: 10px">Saída 2</a>
                             </div>
                         </form>
 

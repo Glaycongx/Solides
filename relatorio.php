@@ -17,6 +17,7 @@ $result = $conexao->query($exibe);
     <head>
         <title>Relatório</title>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/bulma.min.css" />
         <link rel="stylesheet" type="text/css" href="css/relatorio.css">
             
