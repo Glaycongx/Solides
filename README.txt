@@ -8,7 +8,7 @@ Baixar o repositório "Solides"
 
 Adicioná-lo a pasta www, dentro da instalação do WAMP.
 
-Pronto! Basta acessar: localhost/login-php
+Pronto! Basta acessar: localhost/solides
 
 Obs: O banco de dados anexo já contém um login:
 
