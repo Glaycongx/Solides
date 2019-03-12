@@ -16,14 +16,10 @@ echo "Connected successfully";
 $sql = "INSERT into ponto_eletronico(id_users, data_registro, tipo_registro, hora) values ((select id from users where usuario = '$nome'),NOW(),'Saida Empresa', NOW())";
 
 if($conexao->query($sql) === TRUE) {
-	echo "New record created successfully";
-}else {
-      echo "Error: Não foi possível executar a query";
-  }
+	$_SESSION['status_cadastro'] = true;
+}
+header('Location: painel.php');
 
-
-//$result = mysqli_query($conexao, $sql);
-//$row = mysqli_fetch_assoc($result);
 $conexao->close();
 
 exit;

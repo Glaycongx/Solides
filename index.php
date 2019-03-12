@@ -36,13 +36,13 @@ session_start();
                         <form action="login.php" method="POST">
                             <div class="field">
                                 <div class="control">
-                                    <input name="usuario" name="text" class="input is-large" placeholder="Seu usuário" autofocus="">
+                                    <input name="usuario" name="text" required="" class="input is-large" placeholder="Seu usuário" autofocus="">
                                 </div>
                             </div>
 
                             <div class="field">
                                 <div class="control">
-                                    <input name="senha" class="input is-large" type="password" placeholder="Sua senha">
+                                    <input name="senha" class="input is-large" type="password" required="" placeholder="Sua senha">
                                 </div>
                             </div>
                             <div style="display: flex; margin-top: 20px">

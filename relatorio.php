@@ -26,7 +26,7 @@ $result = $conexao->query($exibe);
         <div>
             <p id="titulo"><b>Solides Tecnologia</b></p>
             <p id="subtitulo"><b>Relatório de Apontamentos</b></p>
-            <p><b>Usuário: </b><?php echo $_SESSION['usuario'];?></p>
+            <p style="margin-left: 5px"><b>Usuário: </b><?php echo $_SESSION['usuario'];?></p>
         </div>
         <table id="tabela">
             <thead>
@@ -50,12 +50,14 @@ $result = $conexao->query($exibe);
                                 <?php echo $row['tipo']; ?>
                             </td>
                         </tr>
+
                    
                    <?php }
                  ?>
             </tbody>
         </table>
-        <div id="rodape-final">
+        <a href="painel.php" class="button is-block is-link is-large is-fullwidth" style="font-weight: 500; margin-top: 20px">Voltar</a>
+        <div id="rodape-final" style="margin-top: 20px">
             <hr size="1" color=black>
         </div>
     </body>

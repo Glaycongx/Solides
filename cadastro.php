@@ -45,22 +45,22 @@ session_start();
                         <form action="cadastrar.php" method="POST">
                             <div class="field">
                                 <div class="control">
-                                    <input name="nome" type="text" class="input is-large" placeholder="Nome" autofocus>
+                                    <input name="nome" type="text" required="" class="input is-large" placeholder="Nome" autofocus>
                                 </div>
                             </div>
                             <div class="field">
                                 <div class="control">
-                                    <input name="usuario" type="text" class="input is-large" placeholder="Usuário">
+                                    <input name="usuario" type="text" required="" class="input is-large" placeholder="Usuário">
                                 </div>
                                 <div class="field">
                                     <div class="control">
-                                        <input type="text" name="email" class="input is-large" placeholder="Email">
+                                        <input type="email" required="" name="email" class="input is-large" placeholder="Email">
                                     </div>
                                 </div>
                             </div>
                             <div class="field">
                                 <div class="control">
-                                    <input name="senha" class="input is-large" type="password" placeholder="Senha">
+                                    <input name="senha" class="input is-large" type="password" required="" placeholder="Senha">
                                 </div>
                             </div>
                             <div style="display: flex">

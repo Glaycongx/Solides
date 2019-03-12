@@ -1,5 +1,5 @@
 <?php
-session_start();
+//session_start();
 include('verifica_login.php');
 ?>
 
@@ -22,6 +22,17 @@ include('verifica_login.php');
                         <form>
 
                             <h2>Olá, <?php echo $_SESSION['usuario'];?></h2>
+
+                                    <?php
+                               if(isset($_SESSION['status_cadastro'])):
+                            ?>
+                            <div class="notification is-success">
+                              <p>Ponto Registrado!</p>
+                            </div>
+                            <?php
+                        endif;
+                        unset($_SESSION['status_cadastro']);
+                            ?>  
                             
                             <div style="display: flex; margin-top: 20px">
                                 <a href="entrada_empresa.php" class="button is-block is-link is-large is-fullwidth" style="font-weight: 500">Entrada 1</a>
